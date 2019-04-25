@@ -248,25 +248,49 @@ header nav a:hover {
 .home-page .features-container {
   background: #002070;
   width: 100%;
-  height: 800px;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: column;
+}
+.home-page .features-container .wrapper {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  color: white;
 }
-.home-page .features-container .feature {
+.home-page .features-container .wrapper .feature {
   width: 30%;
 }
-.home-page .features-container .feature img {
+.home-page .features-container .wrapper .feature img {
   width: 100%;
   height: 300px;
 }
-.home-page .features-container .feature .feature-content h3 {
+.home-page .features-container .wrapper .feature .feature-content h3 {
   font-size: 3.8rem;
   margin: 30px 0;
   text-align: center;
 }
-.home-page .features-container .feature .feature-content p {
+.home-page .features-container .wrapper .feature .feature-content p {
   font-size: 1.8rem;
+}
+.home-page .features-container i {
+  position: absolute;
+  bottom: 30px;
+  font-size: 4.8rem;
+  opacity: 0.7;
+  left: 50%;
+}
+.home-page .email-signup {
+  width: 100%;
+  height: 300px;
+  background: red;
+}
+footer {
+  width: 100%;
+  height: 150px;
+  background: #08addd;
 }
