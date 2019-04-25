@@ -1,3 +1,36 @@
 header {
-    
+
+    padding: 20px 0;
+
+    .flex(space-between; baseline;);
+    width: 100%;
+    background: @red;
+    color: white;
+
+    h1 {
+        font-size: 4.0rem;
+        width: 40%;
+        font-family: "lato-bold";
+        padding-left: 30px;
+    }
+
+    nav {
+
+        font-size: 2.8rem;
+        .flex(space-between; center;);
+        width: 50%;
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: @lightblue;
+            }
+
+            &:last-child {
+                margin-right: 30px;
+            }
+        }
+    }
 }

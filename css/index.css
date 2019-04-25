@@ -176,6 +176,63 @@ html {
   src: url(../assets/fonts/lato/Lato-Regular.ttf);
 }
 body {
+  font-size: 1.6rem;
+  color: #55596d;
   font-family: "lato", sans-serif;
-  font-size: 36px;
+  line-height: 1.4;
+}
+header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+  width: 100%;
+  background: #bb1333;
+  color: white;
+}
+header h1 {
+  font-size: 4rem;
+  width: 40%;
+  font-family: "lato-bold";
+  padding-left: 30px;
+}
+header nav {
+  font-size: 2.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: #08addd;
+}
+header nav a:last-child {
+  margin-right: 30px;
+}
+.home-page .welcome {
+  background: linear-gradient(to bottom right, rgba(0, 32, 112, 0.6) 15%, rgba(8, 173, 221, 0.6) 55%);
+  width: 100%;
+  height: 800px;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-page .welcome h2 {
+  text-align: center;
+  width: 50%;
+  font-size: 4.6rem;
+  margin-bottom: 50px;
+}
+.home-page .welcome p {
+  width: 40%;
+  font-size: 1.8rem;
 }
