@@ -1,4 +1,8 @@
 header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 
     padding: 20px 0;
 
@@ -11,25 +15,19 @@ header {
         font-size: 4.0rem;
         width: 40%;
         font-family: "lato-bold";
-        padding-left: 30px;
+        padding-left: 10px;
     }
 
     nav {
 
         font-size: 2.8rem;
-        .flex(space-between; center;);
-        width: 50%;
+        .flex(space-around; center;);
+        width: 40%;
 
         a {
-            color: white;
-            text-decoration: none;
 
             &:hover {
                 color: @lightblue;
-            }
-
-            &:last-child {
-                margin-right: 30px;
             }
         }
     }
