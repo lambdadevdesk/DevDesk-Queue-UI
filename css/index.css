@@ -248,5 +248,25 @@ header nav a:hover {
 .home-page .features-container {
   background: #002070;
   width: 100%;
-  height: 1200px;
+  height: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+.home-page .features-container .feature {
+  width: 30%;
+}
+.home-page .features-container .feature img {
+  width: 100%;
+  height: 300px;
+}
+.home-page .features-container .feature .feature-content h3 {
+  font-size: 3.8rem;
+  margin: 30px 0;
+  text-align: center;
+}
+.home-page .features-container .feature .feature-content p {
+  font-size: 1.8rem;
 }
