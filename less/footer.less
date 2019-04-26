@@ -1,5 +1,32 @@
 footer {
+    color: white;
     width: 100%;
-    height: 300px;
+    height: 220px;
     background: @lightblue;
+    font-size: 2.2rem;
+    .flex(space-between; center; column;);
+    padding: 20px;
+
+
+    nav {
+        width: 30%;
+        .flex(space-between; flex-start;);
+    }
+
+    .footer-content {
+        .flex(flex-end; center; column;);
+        margin-top: 60px;
+
+        a {
+            text-decoration: underline;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        i {
+            margin-right: 8px;
+        }
+    }
 }

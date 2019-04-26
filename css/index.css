@@ -288,7 +288,7 @@ header nav a:hover {
   width: 100%;
   height: 300px;
   background: red;
-  opacity: 0.8;
+  opacity: 0.85;
   color: white;
   display: flex;
   justify-content: center;
@@ -332,7 +332,37 @@ header nav a:hover {
   font-size: 1.8rem;
 }
 footer {
+  color: white;
   width: 100%;
-  height: 300px;
+  height: 220px;
   background: #08addd;
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+footer nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+footer .footer-content a {
+  text-decoration: underline;
+}
+footer .footer-content p {
+  margin-bottom: 20px;
+}
+footer .footer-content i {
+  margin-right: 8px;
 }
