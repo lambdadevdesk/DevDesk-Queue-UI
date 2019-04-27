@@ -433,6 +433,11 @@ header .hidden {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .home-page .email-signup {
+    height: 400px;
+  }
+}
 .home-page .email-signup h3 {
   font-size: 3.6rem;
   margin-bottom: 60px;
@@ -444,6 +449,13 @@ header .hidden {
   justify-content: center;
   align-items: baseline;
   flex-direction: row;
+}
+@media (max-width: 500px) {
+  .home-page .email-signup form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .home-page .email-signup form input {
   color: white;
@@ -466,6 +478,13 @@ header .hidden {
     width: 40%;
   }
 }
+@media (max-width: 500px) {
+  .home-page .email-signup form input {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
 .home-page .email-signup form button {
   width: 15%;
   color: #bb1333;
@@ -482,7 +501,7 @@ header .hidden {
 footer {
   color: white;
   width: 100%;
-  height: 220px;
+  height: auto;
   background: #08addd;
   font-size: 2.2rem;
   display: flex;
@@ -490,6 +509,11 @@ footer {
   align-items: center;
   flex-direction: column;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  footer {
+    padding-top: 0;
+  }
 }
 footer nav {
   width: 40%;
@@ -501,6 +525,24 @@ footer nav {
 @media (max-width: 1100px) {
   footer nav {
     width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  footer nav a {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
   }
 }
 footer .footer-content {

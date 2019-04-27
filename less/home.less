@@ -127,6 +127,10 @@
         color: white;
         .flex(center; center; column;);
 
+        @media @phone {
+            height: 400px;
+        }
+
         h3 {
             font-size: 3.6rem;
             margin-bottom: 60px;
@@ -136,6 +140,12 @@
             width: 70%;
             font-size: 1.8rem;
             .flex(center; baseline;);
+
+            @media @phone {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
 
             input {
                 color: white;
@@ -156,6 +166,12 @@
 
                 @media @tablet {
                     width: 40%;
+                }
+
+                @media @phone {
+                    width: 80%;
+                    margin-right: 0;
+                    margin-bottom: 50px;
                 }
             }
 
