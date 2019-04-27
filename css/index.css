@@ -223,7 +223,6 @@ header .logo {
   justify-content: flex-start;
   align-items: baseline;
   flex-direction: row;
-  width: 50%;
 }
 @media (max-width: 500px) {
   header .logo {
@@ -521,14 +520,31 @@ header .hidden {
   flex-direction: row;
   flex-flow: wrap;
 }
+@media (max-width: 500px) {
+  .about-page .team .members {
+    flex-direction: column;
+  }
+}
 .about-page .team .members .team-member {
+  font-size: 2.2rem;
   width: 30%;
   margin-bottom: 60px;
   padding: 30px;
 }
+@media (max-width: 500px) {
+  .about-page .team .members .team-member {
+    width: 70%;
+  }
+}
 .about-page .team .members .team-member img {
   width: 30%;
   height: auto;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .about-page .team .members .team-member img {
+    width: 100%;
+  }
 }
 footer {
   color: white;
