@@ -498,6 +498,38 @@ header .hidden {
     width: 40%;
   }
 }
+.about-page {
+  color: white;
+}
+.about-page .team {
+  background: #1e50ee;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.about-page .team h2 {
+  font-size: 4.8rem;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.about-page .team .members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+.about-page .team .members .team-member {
+  width: 30%;
+  margin-bottom: 60px;
+  padding: 30px;
+}
+.about-page .team .members .team-member img {
+  width: 30%;
+  height: auto;
+}
 footer {
   color: white;
   width: 100%;
