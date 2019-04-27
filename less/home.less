@@ -4,22 +4,34 @@
         background: linear-gradient(to bottom right, rgb(30,80,238) 25%, rgb(8,173,221) 65%);
 
         width: 100%;
+        min-height: 575px;
         height: 90vh;
         position: relative;
         color: white;
-
         .flex(center; center; column;);
+
+        @media @tablet {
+            height: 85vh;
+        }
 
         h2 {
             text-align: center;
             width: 50%;
             font-size: 4.6rem;
             margin-bottom: 50px;
+
+            @media @tablet {
+                width: 70%;
+            }
         }
 
         p {
             width: 40%;
             font-size: 1.8rem;
+
+            @media @tablet {
+                width: 60%;
+            }
         }
 
         i {
@@ -36,6 +48,7 @@
     .features-container {
         background: @darkblue;
         width: 100%;
+        min-height: 800px;
         height: 100vh;
         position: relative;
         color: white;
@@ -111,6 +124,10 @@
                 &::placeholder {
                     color: lightgray;
                 }
+
+                @media @tablet {
+                    width: 40%;
+                }
             }
 
             button {
@@ -120,6 +137,10 @@
                 padding: 15px;
                 border-radius: 50px;
                 font-size: 1.8rem;
+
+                @media @tablet {
+                    width: 40%;
+                }
             }
         }
     }

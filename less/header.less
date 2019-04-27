@@ -11,11 +11,39 @@ header {
     background: @red;
     color: white;
 
+    @media @tablet {
+        .flex(center; center; column;);
+        padding-top: 10px;
+    }
+
+    .logo {
+        .flex(flex-start; baseline;);
+        width: 50%;
+
+        i {
+            padding-left: 20px;
+            font-size: 2.4rem;
+            display: none;
+
+            @media @tablet {
+                display: none;
+            }
+
+            @media @phone {
+                display: block;
+            }
+        }
+    }
+
     h1 {
         font-size: 4.0rem;
-        width: 40%;
+        width: 100%;
         font-family: "lato-bold";
         padding-left: 40px;
+
+        @media @tablet {
+            margin-bottom: 20px;
+        }
     }
 
     nav {
@@ -23,6 +51,10 @@ header {
         font-size: 2.8rem;
         .flex(space-around; center;);
         width: 40%;
+
+        @media @tablet {
+            width: 90%;
+        }
 
         a {
 
