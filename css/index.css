@@ -288,6 +288,7 @@ header nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: none;
   }
 }
 @media (max-width: 500px) {
@@ -304,6 +305,9 @@ header nav a:hover {
 }
 header .hidden {
   display: none;
+}
+header .visible {
+  display: flex;
 }
 .home-page .welcome {
   background: linear-gradient(to bottom right, #1e50ee 25%, #08addd 65%);

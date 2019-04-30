@@ -7,4 +7,5 @@ let headerNav = document.querySelector('header nav');
 
 hamburger.addEventListener('click', function(e) {
     headerNav.classList.toggle('hidden');
+    headerNav.classList.toggle('visible');
 });
