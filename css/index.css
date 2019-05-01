@@ -186,9 +186,6 @@ a {
   text-decoration: none;
   color: white;
 }
-.hidden {
-  display: none;
-}
 header {
   position: sticky;
   top: 0;
@@ -551,6 +548,11 @@ header .visible {
   width: 30%;
   margin-bottom: 60px;
   padding: 30px;
+}
+@media (max-width: 1100px) {
+  .about-page .team .members .team-member {
+    width: 45%;
+  }
 }
 @media (max-width: 500px) {
   .about-page .team .members .team-member {
