@@ -25,19 +25,22 @@ let team = [sean, christian, jeremy, suen, mychal, xavier];
 // Grab the members div
 let membersSection = document.querySelector('.members');
 
+//Check to make sure we are on the about us page
+if(membersSection) {
+    // Loop through each team member and add them to the about us page
+    team.forEach(function(member) {
 
-team.forEach(function(member) {
-
-    let tempDiv = document.createElement('div');
-    tempDiv.classList.add('team-member');
-    tempDiv.innerHTML = `<img src="${member.image}" alt="Picture of team member ${member.firstName} ${member.lastName}">
-    <div class="member-info">
-        <h3>${member.firstName} ${member.lastName}</h3>
-        <p>${member.role}</p>
-        <p>Github Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a></p>`;
-
-    membersSection.append(tempDiv);
-})
+        let tempDiv = document.createElement('div');
+        tempDiv.classList.add('team-member');
+        tempDiv.innerHTML = `<img src="${member.image}" alt="Picture of team member ${member.firstName} ${member.lastName}">
+        <div class="member-info">
+            <h3>${member.firstName} ${member.lastName}</h3>
+            <p>${member.role}</p>
+            <p>Github Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a></p>`;
+    
+        membersSection.append(tempDiv);
+    })
+}
 
 
 // Grab the hamburger icon
@@ -51,3 +54,12 @@ hamburger.addEventListener('click', function(e) {
     headerNav.classList.toggle('hidden');
     headerNav.classList.toggle('visible');
 });
+
+// Grab email submit button
+let emailButton = document.querySelector('.email-signup button');
+
+emailButton.addEventListener('mouseenter', function(e) {
+    e.target.style.opacity = 0.9;
+})
+
+emailButton.addEventListener('mouseleave', e => e.target.style.opacity = 1);
