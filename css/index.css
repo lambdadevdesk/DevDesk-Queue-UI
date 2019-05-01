@@ -439,6 +439,7 @@ header .visible {
 @media (max-width: 500px) {
   .home-page .email-signup {
     height: 400px;
+    text-align: center;
   }
 }
 .home-page .email-signup h3 {
