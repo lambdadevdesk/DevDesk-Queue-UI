@@ -15,7 +15,8 @@
         }
         
         @media @phone {
-
+            height: auto;
+            padding: 80px;
         }
 
         h2 {
@@ -75,6 +76,10 @@
             .feature {
                 width: 30%;
 
+                @media @tablet {
+                    width: 40%;
+                }
+
                 @media @phone {
                     width: 90%;
                     padding-bottom: 60px;
@@ -99,6 +104,10 @@
                         font-size: 3.8rem;
                         margin: 30px 0;
                         text-align: center;
+
+                        @media @tablet {
+                            font-size: 2.8rem;
+                        }
                     }
     
                     p {
