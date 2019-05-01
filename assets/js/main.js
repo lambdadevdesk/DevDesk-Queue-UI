@@ -9,6 +9,20 @@ class TeamMember {
     }
 }
 
+function compare(a, b) {
+    let aLastName = a.lastName.toUpperCase();
+    let bLastName = b.lastName.toUpperCase();
+
+    let comparison = 0;
+    if(aLastName > bLastName) {
+        comparison = 1;
+    } else if(aLastName < bLastName) {
+        comparison = -1;
+    }
+
+    return comparison;
+}
+
 
 
 //Create team members
@@ -21,6 +35,9 @@ let xavier = new TeamMember('Xavier', 'Puentes', 'Back-End Architect', 'xpuentes
 
 let team = [sean, christian, jeremy, suen, mychal, xavier];
 
+// Sort the team by last name
+let teamSorted = team.sort(compare);
+
 
 // Grab the members div
 let membersSection = document.querySelector('.members');
@@ -28,7 +45,7 @@ let membersSection = document.querySelector('.members');
 //Check to make sure we are on the about us page
 if(membersSection) {
     // Loop through each team member and add them to the about us page
-    team.forEach(function(member) {
+    teamSorted.forEach(function(member) {
 
         let tempDiv = document.createElement('div');
         tempDiv.classList.add('team-member');
@@ -58,8 +75,13 @@ hamburger.addEventListener('click', function(e) {
 // Grab email submit button
 let emailButton = document.querySelector('.email-signup button');
 
-emailButton.addEventListener('mouseenter', function(e) {
-    e.target.style.opacity = 0.9;
-})
+//Make sure emailButton exists
+if(emailButton) {
+    emailButton.addEventListener('mouseenter', function(e) {
+        e.target.style.opacity = 0.9;
+    });
 
-emailButton.addEventListener('mouseleave', e => e.target.style.opacity = 1);
+    emailButton.addEventListener('mouseleave', e => e.target.style.opacity = 1);
+}
+
+
