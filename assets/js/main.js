@@ -45,6 +45,7 @@ let membersSection = document.querySelector('.members');
 //Check to make sure we are on the about us page
 if(membersSection) {
     // Loop through each team member and add them to the about us page
+    // *** Also a reusable component. You can add as many team members as you want to the list and it will work.
     teamSorted.forEach(function(member) {
 
         let tempDiv = document.createElement('div');
