@@ -27,11 +27,11 @@ function compare(a, b) {
 
 //Create team members
 let sean = new TeamMember('Sean', 'Hockin', 'UI Design', 'shockin779', 'https://github.com/shockin779', 'assets/images/sean-hockin.jpg');
-let christian = new TeamMember('Christian', 'MacDonald', 'UI Design', 'ChristianMacDonald', 'https://github.com/ChristianMacDonald', 'assets/images/sean-hockin.jpg');
-let jeremy = new TeamMember('Jeremy', 'Morales', 'UI Design', 'performance-fleece', 'https://github.com/performance-fleece', 'assets/images/sean-hockin.jpg');
-let suen = new TeamMember('Suen', 'O', 'Front-End Architect', 'Suen-O', 'https://github.com/Seun-O', 'assets/images/sean-hockin.jpg');
-let mychal = new TeamMember('Mychal', 'Hall', 'Front-End Architect', 'mychal-hall', 'https://github.com/mychal-hall', 'assets/images/sean-hockin.jpg');
-let xavier = new TeamMember('Xavier', 'Puentes', 'Back-End Architect', 'xpuentes', 'https://github.com/xpuentes', 'assets/images/sean-hockin.jpg');
+let christian = new TeamMember('Christian', 'MacDonald', 'UI Design', 'ChristianMacDonald', 'https://github.com/ChristianMacDonald', 'assets/images/cat.jpeg');
+let jeremy = new TeamMember('Jeremy', 'Morales', 'UI Design', 'performance-fleece', 'https://github.com/performance-fleece', 'assets/images/cat.jpeg');
+let suen = new TeamMember('Suen', 'O', 'Front-End Architect', 'Suen-O', 'https://github.com/Seun-O', 'assets/images/cat.jpeg');
+let mychal = new TeamMember('Mychal', 'Hall', 'Front-End Architect', 'mychal-hall', 'https://github.com/mychal-hall', 'assets/images/cat.jpeg');
+let xavier = new TeamMember('Xavier', 'Puentes', 'Back-End Architect', 'xpuentes', 'https://github.com/xpuentes', 'assets/images/cat.jpeg');
 
 let team = [sean, christian, jeremy, suen, mychal, xavier];
 
